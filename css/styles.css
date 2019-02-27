@@ -1,0 +1,112 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h1, h2{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+h1:hover{
+    transform: scale(1.2);
+}
+h2:hover{
+    transform: scale(1.2);
+}
+a {
+    text-decoration: none;
+    color: orangered;
+}
+
+header nav h2::after{
+    content: "\2193";
+}
+header nav h2::before{
+    content: "\2193";
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	position: relative;
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+nav li:hover{
+    transform: scale(1.1);
+}
+nav li a {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 25px;
+}
+
+nav li a:first-child {
+    width: 200px;  
+    height: 100px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    overflow: hidden;
+    text-decoration: none;
+    background: #67697C;
+    text-align: center;
+    vertical-align: bottom;
+    display: inline-block;
+}
+nav li a:first-child:before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    height: 100%;
+}
+nav li a:first-child:hover{
+    background: #969696;
+    transition-duration: 0.2s;
+}
+
+
+
+nav li a + a {
+    height: 50%;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    display: block;
+    text-decoration: none;
+    background: #969696;
+    overflow: hidden;
+    text-align: center;
+/*    width: 200px;*/
+}
+nav li a + a:hover{
+    background: #67697C;
+    transition-duration: 0.2s;   
+}
+
+article {
+    font-family: 'Bitter', serif;
+}
+article section ol {
+    list-style: none;
+}
+section:first-of-type p {
+    border-radius: 20px;
+    background: orange;
+    display: inline-block;
+    width: 25%;
+/*    float: left;*/
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
